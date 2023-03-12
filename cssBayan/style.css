@@ -1,6 +1,6 @@
 body
 {
-   width: auto;
+   width: 100vw;
    min-width: auto;
    display: flex;
    align-items: center;
@@ -8,24 +8,75 @@ body
    flex-direction: column;
 
 }
+main
+{
+    
+    width: 100vw;
+
+}
 main .container{
     display: flex;
     flex-direction: column;
+    
+    
 }
 input
 {
+
  visibility: hidden;
+ 
  
 }
 .container label{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(160, 210, 249);
+    height: auto;
+    width: 80vw;
+    height: auto;
+    
+
+
+    
+}
+.info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2
+{
+    padding-right: 10px;
+
+    
 }
 
 .container label:hover
 {
     color: blue;
+    
 
 }
+article{
+    display: flex;
+    justify-content: center;
+    height: 50vw;
+}
+.element
+{
+    display: flex;
+    justify-content: center;
+    
+}
+.element img
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
 .element .meme
 {
 
@@ -34,13 +85,30 @@ input
 
     
 }
-.container  label:hover ~ .meme
+.container  input:hover ~ .meme
 {
     height: auto;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    
 
 }
 .container input:checked ~ .meme
 {
-    height: auto;
+    height: 20vw;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    
 
 }
+.container input:checked ~ .icon
+{
+    transform: rotate(46deg);
+}
+.container label:hover ~ .icon
+{
+    transform: rotate(-46deg);
+}
+
