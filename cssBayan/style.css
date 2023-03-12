@@ -64,7 +64,8 @@ article img{
 p
 {
     padding-left: 10px;
-    font-size: 30px;    
+    font-size: 30px; 
+    font-family: Arial, Helvetica, sans-serif;   
 }
 .element img.icon 
 {
