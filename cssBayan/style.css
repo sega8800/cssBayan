@@ -6,7 +6,12 @@ body
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   background-color: rgb(209, 187, 187); 
 
+}
+h1
+{
+    font-family: 'Courier New', Courier, monospace;
 }
 main
 {
@@ -31,10 +36,12 @@ input
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: rgb(160, 210, 249);
+    background-color: rgb(253, 253, 253);
     height: auto;
     width: 80vw;
     height: auto;
+    transition: all 0.4s;
+    margin-top: 10px;
     
 
 
@@ -45,29 +52,44 @@ input
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-h2
-{
-    padding-right: 10px;
-
+    
     
 }
+p
+{
+    padding-left: 10px;
+    font-size: 30px;    
+}
+.element img.icon 
+{
+    padding-right: 10px;
+}
 
-.container label:hover
+.container:hover
 {
     color: blue;
     
 
 }
+.container label:hover
+{
+    color: rgb(0, 0, 0);
+     background-color: rgb(144, 144, 144);   
+
+}
+
 article{
     display: flex;
     justify-content: center;
-    height: 50vw;
+    height: auto;
+    
+    
 }
 .element
 {
     display: flex;
     justify-content: center;
+    
     
 }
 .element img
@@ -75,40 +97,55 @@ article{
     margin: 0px;
     padding: 0px;
     
+    
+}
+.element .info
+{
+    border-width: 10px;
+    border-color: black;
 }
 
 .element .meme
 {
 
     height: 0;
-    overflow: hidden;
+    
+    transition: all  0.5s;
+    
 
     
 }
-.container  input:hover ~ .meme
+
+.container  input:hover ~  .meme
 {
     height: auto;
-    transition: 0.5s;
+    
     display: flex;
     align-items: center;
+    transition: all  0.5s;
+    
     
 
 }
+
 .container input:checked ~ .meme
 {
-    height: 20vw;
+    height: auto;
     padding-bottom: 0px;
     display: flex;
     align-items: center;
+    transition: all  0.5s;
+    
+    
     
 
 }
-.container input:checked ~ .icon
+.container input:checked ~ .element img .icon
 {
-    transform: rotate(46deg);
+    transform: rotate(180deg);
 }
-.container label:hover ~ .icon
+.container label:hover ~ element img .icon
 {
-    transform: rotate(-46deg);
+    transform: rotate(180deg);
 }
 
