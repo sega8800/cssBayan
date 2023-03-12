@@ -1,0 +1,46 @@
+body
+{
+   width: auto;
+   min-width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+}
+input
+{
+ visibility: hidden;
+ 
+}
+.container label{
+    text-align: center;
+}
+
+.container label:hover
+{
+    color: blue;
+
+}
+.element .meme
+{
+
+    height: 0;
+    overflow: hidden;
+
+    
+}
+.container  label:hover ~ .meme
+{
+    height: auto;
+
+}
+.container input:checked ~ .meme
+{
+    height: auto;
+
+}
